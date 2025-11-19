@@ -1,7 +1,8 @@
 import { Page } from '@strapi/strapi/admin';
 import { Routes, Route } from 'react-router-dom';
 
-import { HomePage } from './HomePage';
+import { HomePage } from './HomePage.js';
+import React from 'react';
 
 const App = () => {
   return (

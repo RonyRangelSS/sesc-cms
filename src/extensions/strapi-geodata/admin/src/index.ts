@@ -1,7 +1,7 @@
-import { getTranslation } from './utils/getTranslation';
-import { PLUGIN_ID } from './pluginId';
-import { Initializer } from './components/Initializer';
-import PluginIcon from './components/PluginIcon';
+import { getTranslation } from './utils/getTranslation.js';
+import { PLUGIN_ID } from './pluginId.js';
+import { Initializer } from './components/Initializer.js';
+import PluginIcon from './components/PluginIcon.js';
 import * as yup from 'yup';
 
 export default {
@@ -14,7 +14,7 @@ export default {
         defaultMessage: PLUGIN_ID,
       },
       Component: async () => {
-        const { App } = await import('./pages/App');
+        const { App } = await import('./pages/App.js');
 
         return App;
       },
@@ -36,7 +36,7 @@ export default {
       isResizable: true,
       icon: PluginIcon,
       components: {
-        Input: async () => import('./components/Input'),
+        Input: async () => import('./components/Input.js'),
       },
       options: {
         base: [

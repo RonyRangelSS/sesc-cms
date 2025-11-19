@@ -1,7 +1,7 @@
 {
   "version": "0.1.02",
   "keywords": [],
-  "type": "commonjs",
+  "type": "module",
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -37,7 +37,8 @@
     "leaflet": "^1.9.4",
     "ngeohash": "^0.6.3",
     "react-intl": "^6.8.0",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "strapi-geodata": "file:"
   },
   "devDependencies": {
     "@strapi/sdk-plugin": "^5.2.7",

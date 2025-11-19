@@ -1,4 +1,4 @@
-import service from './service';
+import service from './service.js';
 
 export default {
   service,

@@ -1,3 +1,4 @@
+import React from 'react';
 import { forwardRef, Ref, SVGProps } from 'react';
 
 const PluginIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (

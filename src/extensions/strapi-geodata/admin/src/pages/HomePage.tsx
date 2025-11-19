@@ -4,7 +4,8 @@ import { useIntl } from 'react-intl';
 import { Typography, BaseLink } from '@strapi/design-system';
 import { Box } from '@strapi/design-system';
 
-import PluginIcon from './../components/PluginIcon';
+import PluginIcon from './../components/PluginIcon.js';
+import React from 'react';
 
 const HomePage = () => {
   const { formatMessage } = useIntl();
