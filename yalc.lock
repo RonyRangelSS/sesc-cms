@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "strapi-geodata": {
+      "signature": "1f9bc3090e8c6b1676a7ab973ad92a36",
+      "file": true
+    }
+  }
+}

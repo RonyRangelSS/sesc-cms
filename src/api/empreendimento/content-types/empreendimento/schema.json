@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empreendimentos",
+  "info": {
+    "singularName": "empreendimento",
+    "pluralName": "empreendimentos",
+    "displayName": "empreendimento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "municipio": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "regiao": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "localizacao": {
+      "type": "customField",
+      "options": {
+        "info": false
+      },
+      "customField": "plugin::geodata.geojson"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

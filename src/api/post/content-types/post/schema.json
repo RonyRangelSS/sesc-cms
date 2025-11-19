@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagem": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "horario": {
+      "type": "time"
+    },
+    "local": {
+      "type": "customField",
+      "options": {
+        "info": true
+      },
+      "customField": "plugin::geodata.geojson"
+    },
+    "contato": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "string"
+    }
+  }
+}

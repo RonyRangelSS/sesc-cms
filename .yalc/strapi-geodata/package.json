@@ -1,0 +1,71 @@
+{
+  "version": "0.1.02",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.11",
+    "@strapi/icons": "^2.0.0-rc.11",
+    "geojson-validation": "^1.0.2",
+    "leaflet": "^1.9.4",
+    "ngeohash": "^0.6.3",
+    "react-intl": "^6.8.0",
+    "react-leaflet": "^4.2.1",
+    "strapi-geodata": "file:"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "geodata",
+    "displayName": "Geo Data",
+    "description": "geo data"
+  },
+  "name": "strapi-geodata",
+  "description": "geo data",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/red-made/strapi-geodata"
+  },
+  "bugs": {
+    "url": "https://github.com/red-made/strapi-geodata/issues"
+  },
+  "homepage": "https://github.com/red-made/strapi-geodata",
+  "author": "red-made <info@red-made.com>",
+  "main": "index.js",
+  "yalcSig": "1f9bc3090e8c6b1676a7ab973ad92a36"
+}
