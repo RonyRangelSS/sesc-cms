@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "geodata": {
+      "signature": "7df72b96ba28bfdf6018e8d9331f8c4f",
+      "link": true,
+      "replaced": "file:.yalc/geodata"
+    }
+  }
+}
