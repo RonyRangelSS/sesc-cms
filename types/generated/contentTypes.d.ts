@@ -439,7 +439,10 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
     descricao: Schema.Attribute.String;
     endereco: Schema.Attribute.String;
     horario: Schema.Attribute.Time;
-    imagem: Schema.Attribute.String;
+    imagem: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     local: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<
         'plugin::geodata.geojson',

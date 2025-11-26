@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "imagem": {
-      "type": "string"
-    },
     "titulo": {
       "type": "string"
     },
@@ -39,6 +36,16 @@
     },
     "endereco": {
       "type": "string"
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
